@@ -1,8 +1,12 @@
 function titleCase(str) {
   let result = "";
+  //if there is not a 
   let words = str.split(" ");
+  //splts string into Array
   for (let i = 0; i<words.length; i +=1){
+    //creates loop to work through Array
     let word = words[i];
+    //creates new Array (string?)
     for (let j = 0; j<word.length; j+=1){
       if (j===0){
         result += word[j].toUpperCase();
@@ -12,6 +16,7 @@ function titleCase(str) {
     }
 
   result +=" ";
+  //adds a space to elements of Array
 }
 
 return result.slice(0, result.length -1);
